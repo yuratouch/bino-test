@@ -1,0 +1,53 @@
+$mainWhite: #f4f5f9
+$mainRed: #e74c3c
+$mainGray: #999999
+$headerGray: #6a6a6a
+
+$teammateURL1: url(../images/team/teammates/1.png)
+$teammateURL2: url(../images/team/teammates/2.png)
+$teammateURL3: url(../images/team/teammates/3.png)
+$teammateURL4: url(../images/team/teammates/4.png)
+$teammateURL5: url(../images/team/teammates/5.png)
+
+=getTitleStyles($mainGray, $headerGray)
+    &__title
+        text-align: center
+        margin-bottom: 30px
+        p
+            color: $mainGray
+            margin: 15px auto
+            width: 90%
+        h2
+            text-transform: uppercase
+            color: $headerGray
+            font-size: 20px
+
+=getTeammateAvatar($teammateURL1)
+    background-image: $teammateURL1
+    background-size: cover
+    background-position: center
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    overflow: hidden
+
+*
+    margin: 0
+    padding: 0
+body
+    font-family: 'Open Sans', sans-serif
+a
+    text-decoration: none
+    color: $mainWhite
+h1
+    text-transform: uppercase
+    margin: 10px auto
+    @media screen and (min-width: 1200px)
+        font-size: 70px
+p
+    font-size: 12px
+.wrapper
+    width: 90%
+    margin: 0 auto
+    @media screen and (min-width: 1200px)
+        width: 1124px

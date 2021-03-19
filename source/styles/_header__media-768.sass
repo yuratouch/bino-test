@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px)
+    header
+        nav
+            justify-content: space-around
+        h3
+            font-size: 16px
+        .burger
+            display: none
+
+        .slider
+            &__content
+            p:last-of-type
+                width: 60%
+            &__buttons
+                width: 30%
+                margin: 0 3px
+                transition: 0.3s
+                &:hover
+                    transform: scale(1.05)
+
+    #header__menu
+        display: flex
+        li
+            margin: 0 10px
+            text-transform: uppercase
+            transition: 0.3s
+            border-bottom: 1px solid transparent
+            &:hover
+                border-color: $mainRed
+            &:hover a
+                color: $mainRed
+        a
+            transition: 0.3s
+            display: block
+            margin-bottom: 10px
+            font-size: 12px
+
+    #header__logo
+        transition: 0.3s
+        &:hover
+            transform: scale(1.1)

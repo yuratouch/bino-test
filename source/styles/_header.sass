@@ -1,0 +1,119 @@
+header
+    background-image: url(../images/header/Foreground.png)
+    background-size: cover
+    background-position: bottom
+    height: 50vh
+    color: #f4f5f9
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 500px
+    nav
+        display: flex
+        padding: 20px 0
+        justify-content: space-between
+        align-items: center
+        height: 30px
+    ul
+        list-style-type: none
+        display: flex
+        align-items: center
+    h3
+        font-size: 15px
+        font-weight: normal
+        text-transform: capitalize
+
+#header__menu
+    display: none
+
+#header__logo
+    width: 85px
+    img
+        width: 100%
+
+#header__icon
+    width: 40px
+    position: absolute
+    bottom: -20px
+
+.burger
+    position: relative
+    padding: 7px 0
+
+    span
+        display: block
+        width: 30px
+        height: 4px
+        border-radius: 2px
+        background-color: $mainWhite
+        margin: 3px 0
+        transition: 0.3s
+        position: relative
+
+    &__burger__menu
+        display: none
+
+    &:hover span:first-of-type
+        transform: rotate(45deg)
+        top: 6px
+
+    &:hover span:last-of-type
+        transform: rotate(-45deg)
+        top: -1px
+
+    &:hover span:nth-of-type(2)
+        display: none
+
+    &:hover .burger__menu
+        display: block
+
+.burger__menu
+    display: none
+    position: absolute
+    top: 100%
+    left: -250%
+    padding: 5px
+    background-color: black
+    border-radius: 5px
+    font-size: 16px
+    width: 100px
+    text-transform: uppercase
+    z-index: 10
+    a
+        transition: 0.3s
+        border-bottom: 1px solid transparent
+    li
+        white-space: nowrap
+        padding: 3px
+        &:hover a
+            border-color: $mainRed
+            font-weight: bold
+            color: $mainRed
+
+.slider
+    margin-top: 40px
+    &__arrows
+        display: none
+    &__content
+        text-align: center
+        p
+            text-transform: capitalize
+        img
+            margin-bottom: 10px
+        p:last-of-type
+            width: 90%
+            margin: 0 auto
+            margin-bottom: 30px
+    &__buttons
+        width: 45%
+        height: 40px
+        text-transform: uppercase
+        color: $mainWhite
+        border-radius: 3px
+        &:first-of-type
+            background-color: $mainRed
+            border: 1px solid $mainRed
+        &:last-of-type
+            background-color: transparent
+            border: 1px solid $mainWhite

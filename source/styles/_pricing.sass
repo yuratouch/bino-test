@@ -1,0 +1,75 @@
+.pricing
+    padding-top: 50px
+    +getTitleStyles($mainGray, $headerGray)
+    &__main-card
+        text-align: center
+        margin-bottom: 20px
+        transition: 0.3s
+        ul
+            list-style-type: none
+            color: $mainGray
+            margin: 50px 0
+        li
+            padding: 10px 0
+            font-size: 14px
+        h4
+            font-size: 20px
+            text-transform: uppercase
+            color: $mainWhite
+            margin-bottom: 50px
+        > div
+            position: relative
+            padding: 30px
+
+            &:nth-child(1)
+                background: $headerGray
+                display: flex
+                justify-content: center
+            &:nth-child(2)
+                background: $mainWhite
+        &#suggested
+            >div:nth-child(1)
+                background: $mainRed
+            .card-price
+                span
+                    color: $mainRed
+        button
+            width: 45%
+            height: 40px
+            text-transform: uppercase
+            color: #f4f5f9
+            border-radius: 3px
+            transition: 0.3s
+            &#price__btn-starter
+                background: $headerGray
+                border: 1px solid $headerGray
+            &#price__btn-premium
+                background: $mainRed
+                border: 1px solid $mainRed
+            &#price__btn-business
+                background: $headerGray
+                border: 1px solid $headerGray
+            &:hover
+                transform: scale(1.1)
+
+        &:hover
+            transform: scale(1.05)
+
+.card-price
+    display: flex
+    flex-direction: column
+    justify-content: center
+    border-radius: 50%
+    background: #ffffff
+    position: absolute
+    top: 80px
+    z-index: 2
+    width: 100px
+    height: 100px
+    border: 10px solid $mainWhite
+    p
+        color: $headerGray
+    span
+        color: $headerGray
+        font-weight: bold
+        font-size: 30px

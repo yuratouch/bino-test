@@ -1,0 +1,62 @@
+.communication
+    padding-top: 50px
+    padding-bottom: 20px
+    background: $mainWhite
+    +getTitleStyles($mainGray, $headerGray)
+    &__main-contacts
+        padding: 30px
+        background: #ffffff
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        font-size: 14px
+        margin-bottom: 20px
+        div
+            margin: 20px
+        span
+            color: $mainRed
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 16px
+        p
+            color: $mainGray
+        a
+            color: $mainGray
+    &__main-form
+        padding: 30px
+        background: #ffffff
+        margin-bottom: 20px
+        input
+            border: 1px solid transparent
+            border-bottom-color: $mainGray
+            padding: 10px
+            margin-bottom: 10px
+            width: 90%
+            font-size: 12px
+            font-family: 'Open Sans', sans-serif
+            outline: none
+            &:focus
+                outline: none
+                border-color: $mainRed
+        textarea
+            border: 1px solid transparent
+            border-bottom-color: $mainGray
+            padding: 10px
+            margin-bottom: 20px
+            font-size: 12px
+            font-family: "Open Sans", sans-serif
+            width: 90%
+            resize: none
+            &:focus
+                outline: none
+                border-color: $mainRed
+#submit-form
+    width: 45%
+    height: 40px
+    text-transform: uppercase
+    color: #f4f5f9
+    border-radius: 3px
+    background: $mainRed
+    border: 1px solid $mainRed
+    display: block
+    margin: 0 auto

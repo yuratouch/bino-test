@@ -1,0 +1,108 @@
+.blog
+    .wrapper
+        width: 100%
+        padding-top: 50px
+    +getTitleStyles($mainGray, $headerGray)
+    &__main
+        &-article
+            display: flex
+            height: 600px
+            flex-direction: column
+            position: relative
+            background-color: $mainRed
+            & div:first-of-type
+                height: 50%
+                width: 100%
+                background-size: cover
+                background-position: center
+                position: relative
+                text-align: center
+            & #article__image-1
+                background-image: url(../images/blog/1.png)
+            & #article__image-2
+                background-image: url(../images/blog/2.png)
+            & #article__image-3
+                background-image: url(../images/blog/3.png)
+            & #article__image-4
+                background-image: url(../images/blog/4.png)
+            & div:last-of-type
+                background-image: url(../images/blog/back-info.png)
+                background-position: top
+                height: 50%
+                width: 100%
+                box-sizing: border-box
+                padding: 30px 20px
+                position: absolute
+                bottom: 30px
+            p
+                color: $mainWhite
+                margin: 30px 0
+            h4
+                color: $mainWhite
+                text-transform: uppercase
+                margin: 20px 0
+                font-weight: normal
+                &::after
+                    content: ""
+                    display: block
+                    background-color: $mainWhite
+                    height: 3px
+                    width: 30px
+                    margin-top: 5px
+            a
+                display: inline-block
+                text-transform: capitalize
+                font-style: italic
+                transition: 0.3s
+                &:hover
+                    transform: scale(1.1)
+            img
+                transform: rotate(90deg)
+                position: absolute
+                bottom: -25px
+            .hidden__header-768
+                display: none
+    &__social
+        padding: 30px
+        background-image: url(../images/blog/background-social.png)
+        background-size: cover
+        background-position: center
+        color: $mainWhite
+        p
+            text-transform: capitalize
+        span
+            font-weight: bold
+            font-size: 20px
+        > div
+            display: flex
+            align-items: center
+            padding: 10px
+
+.social__icon
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 1px solid $mainWhite
+    margin-right: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    &::after
+        width: 30px
+        height: 30px
+    &#social__icon-1
+        &::after
+            content: url(../images/blog/icons/1.png)
+    &#social__icon-2
+        &::after
+            content: url(../images/blog/icons/2.png)
+    &#social__icon-3
+        &::after
+            content: url(../images/blog/icons/3.png)
+    &#social__icon-4
+        &::after
+            width: 22px
+            content: url(../images/blog/icons/4.png)
+    &#social__icon-5
+        &::after
+            content: url(../images/blog/icons/5.png)

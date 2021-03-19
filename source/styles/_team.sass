@@ -1,0 +1,42 @@
+.team
+    background-image: url(../images/team/team-background.png)
+    background-size: cover
+    background-position: center
+    padding: 50px 20px 20px 20px
+    +getTitleStyles($mainWhite, $mainWhite)
+    &__main
+        &-teammate
+            display: flex
+            color: $mainWhite
+            align-items: center
+            margin-bottom: 30px
+            span
+                color: $mainRed
+                font-weight: bold
+                font-size: 18px
+        #teammate-1
+            .teammate-avatar
+                background-image: $teammateURL1
+        #teammate-2
+            .teammate-avatar
+                background-image: $teammateURL2
+        #teammate-3
+            .teammate-avatar
+                background-image: $teammateURL3
+        #teammate-4
+            .teammate-avatar
+                background-image: $teammateURL4
+        #teammate-5
+            .teammate-avatar
+                background-image: $teammateURL5
+
+.teammate-avatar
+    background-size: cover
+    background-position: center
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    overflow: hidden
+    margin-right: 20px
+    border: 2px solid $mainRed
+    transition: 0.3s

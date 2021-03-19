@@ -1,0 +1,47 @@
+@media screen and (min-width: 1200px)
+    header
+        h3
+            font-size: 20px
+    .slider
+        display: flex
+        &__arrows
+            display: flex
+            align-items: center
+            width: 35%
+            button
+                width: 40px
+                height: 40px
+                background-image: url(../images/header/slider/left.svg)
+                background-position: center
+                background-repeat: no-repeat
+                background-color: $headerGray
+                border-color: transparent
+                border-radius: 2px
+                transition: 0.3s
+                outline: none
+            &#slider__arrows-right
+                justify-content: flex-end
+                button
+                    background-image: url(../images/header/slider/right.svg)
+            &:hover #slider__arrows-right
+                background-color: $mainRed
+                transform: scale(1.1)
+            &:hover #slider__arrows-left
+                background-color: $mainRed
+                transform: scale(1.1)
+        &__content
+            text-align: center
+            &-btns
+                display: flex
+                justify-content: center
+        p:last-of-type
+            width: 70%
+        &__buttons
+            margin: 0 10px
+
+    #header__menu
+        display: flex
+        li
+            margin: 0 20px
+        a
+            font-size: 14px

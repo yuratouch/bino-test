@@ -1,0 +1,40 @@
+@media screen and (min-width: 1200px)
+    .blog
+
+        &__title
+            h2
+                font-size: 36px
+
+        &__main
+            display: flex
+            flex-wrap: wrap
+            &-article
+                height: 450px
+                width: 50%
+                p
+                    font-size: 16px
+
+                h4
+                    font-size: 24px
+                .hidden__header-1200
+                    display: none
+                .hidden__header-768
+                    display: block
+
+            &-article:nth-of-type(2)
+                flex-direction: row
+
+            &-article:nth-of-type(3)
+                flex-direction: row-reverse
+
+            &-article:nth-of-type(4)
+                flex-direction: row-reverse
+        &__social
+            justify-content: center
+            min-height: 420px
+            p
+                font-size: 14px
+            span
+                font-size: 30px
+            > div
+                margin: 0 50px
